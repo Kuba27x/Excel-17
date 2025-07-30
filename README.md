@@ -1,379 +1,349 @@
-Excel-17
+# 📊 Excel-17
 
-Project Description
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-blue.svg)
 
-Excel-17 is a comprehensive guide to pivot tables in Microsoft Excel. Here you'll find practical tips, concise explanations, and illustrated examples for creating and working with pivot tables, Multi-level Pivot Tables, Multiple Report Filter Fields, Frequency Distribution, Pivot Charts, Slicers and Calculated Field/Item.
+## ✨ Project Description
 
-Table of Contents
+**Excel-17** is your guide to mastering Pivot Tables in Microsoft Excel.  
+Learn practical tips, step-by-step instructions, and see illustrated examples for:
+- Pivot Tables
+- Grouping
+- Multi-level Pivot Tables
+- Multiple Report Filter Fields
+- Frequency Distribution
+- Pivot Charts
+- Slicers
+- Calculated Field/Item
+- GETPIVOTDATA function
 
-Pivot Tables
+> 📚 **Goal:** Help you analyze data efficiently and create insightful Excel reports—ideal for learners and power users!
 
-Pivot tables are one of Excel's most powerful features. A pivot table allows you to extract the significance from a large, detailed data set. Our data set consists of 213 records and 6 fields. Order ID, Product, Category, Amount, Date and Country.
+---
 
-To insert a pivot table, execute the following steps.
+## 📒 Table of Contents
 
-1. Click any single cell inside the data set.
-2. On the Insert tab, in the Tables group, click PivotTable.
+- [Pivot Tables](#-pivot-tables)
+- [Sort & Filter Pivot Table](#-sort--filter-pivot-table)
+- [Change Summary Calculation](#-change-summary-calculation)
+- [Two-dimensional & Multi-level Pivot Tables](#-two-dimensional--multi-level-pivot-tables)
+- [Grouping Items & Dates](#-grouping-items--dates)
+- [Multiple Value & Report Filter Fields](#-multiple-value--report-filter-fields)
+- [Frequency Distribution](#-frequency-distribution)
+- [Pivot Charts](#-pivot-charts)
+- [Slicers](#-slicers)
+- [Update Pivot Table](#-update-pivot-table)
+- [Calculated Field/Item](#-calculated-fielditem)
+- [GETPIVOTDATA Function](#-getpivotdata-function)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Author](#-author)
 
-(Note: Excel automatically selects the data for you. The default location for a new pivot table is New Worksheet.)
+---
 
-![screenshot](Screenshots/Pivot1.png)
+## 📊 Pivot Tables
 
-3. Click OK.
+Pivot tables are a powerful Excel feature for summarizing large data sets.
 
-The PivotTable Fields pane appears. To get the total amount exported of each product, drag the following fields to the different areas.
+To create a pivot table:
+1. Click any cell in your data set.
+2. Go to the **Insert** tab → **Tables** group → **PivotTable**.
+   *Excel auto-selects your data. Default is a new worksheet.*
 
-1. Product field to the Rows area.
-2. Amount field to the Values area.
-3. Country field to the Filters area.
+![Pivot Table Wizard](Screenshots/Pivot1.png)
 
-![screenshot](Screenshots/Pivot2.png)
+3. Click **OK**.
 
-Result:
+The PivotTable Fields pane opens.  
+To summarize exported amounts by product:
+- Drag **Product** to Rows
+- Drag **Amount** to Values
+- Drag **Country** to Filters
 
-![screenshot](Screenshots/Pivot3.png)
+![Pivot Fields](Screenshots/Pivot2.png)
 
-Sort a Pivot Table
+**Result:**
 
-1. Click any cell inside the Sum of Amount column.
-2. Right click and click on Sort, Sort Largest to Smallest.
+![Pivot Table Result](Screenshots/Pivot3.png)
 
-![screenshot](Screenshots/Pivot4.png)
+---
 
-Filter a Pivot Table
+## 🔍 Sort & Filter Pivot Table
 
-Click the filter drop-down and select France.
+**Sort:**
+1. Click a cell in the *Sum of Amount* column.
+2. Right-click → Sort → *Sort Largest to Smallest*.
 
-Result:
+![Sort Dialog](Screenshots/Pivot4.png)
 
-![screenshot](Screenshots/Pivot5.png)
+**Filter:**
+Click the filter drop-down and select *France*.
 
-Change Summary Calculation
+**Result:**
 
-1. Click any cell inside the Sum of Amount column.
-2. Right click and click on Value Field Settings.
-3. Choose the type of calculation you want to use. For example, click Count.
+![Filtered Pivot](Screenshots/Pivot5.png)
 
-![screenshot](Screenshots/Pivot6.png)
+---
+
+## 🧮 Change Summary Calculation
+
+1. Click any cell in *Sum of Amount*.
+2. Right-click → Value Field Settings.
+3. Choose calculation type (e.g., *Count*).
+
+![Value Field Settings](Screenshots/Pivot6.png)
 
 4. Click OK.
 
-![screenshot](Screenshots/Pivot7.png)
+![Count Result](Screenshots/Pivot7.png)
 
-16 out of the 28 orders to France were 'Apple' orders.
+> 16 out of the 28 orders to France were 'Apple' orders.
 
-Two-dimensional Pivot Table
+---
 
-If you drag a field to the Rows area and Columns area, you can create a two-dimensional pivot table. Insert new pivot table. To get the total amount exported to each country, of each product, drag the following fields to the different areas.
+## 🔀 Two-dimensional & Multi-level Pivot Tables
 
-1. Country field to the Rows area.
-2. Product field to the Columns area.
-3. Amount field to the Values area.
-4. Category field to the Filters area.
+**Two-dimensional:**
+- Drag **Country** to Rows
+- Drag **Product** to Columns
+- Drag **Amount** to Values
+- Drag **Category** to Filters
 
-![screenshot](Screenshots/Pivot8.png)
+![2D Fields](Screenshots/Pivot8.png)
 
-Result:
+**Result:**
 
-![screenshot](Screenshots/Pivot9.png)
+![2D Result](Screenshots/Pivot9.png)
 
-Group Pivot Table Items
+**Multi-level:**
+Drag more than one field to Rows (e.g., *Category* and *Country*).
 
-The Product field contains 7 items. Apple, Banana, Beans, Broccoli, Carrots, Mango and Orange.
+![Multi-level Fields](Screenshots/Pivot15.png)
 
-To create two groups, execute the following steps.
+**Result:**
 
-1. In the pivot table, select Apple and Banana.
-2. Right click and click on Group.
+![Multi-level Result](Screenshots/Pivot16.png)
 
-![screenshot](Screenshots/Pivot10.png)
+---
 
-3. In the pivot table, select Beans, Broccoli, Carrots, Mango and Orange.
-4. Right click and click on Group.
+## 🔗 Grouping Items & Dates
 
-Result:
+**Group Products:**
+- Select items, right-click → Group.
 
-![screenshot](Screenshots/Pivot11.png)
+![Group Dialog](Screenshots/Pivot10.png)
+![Group Result](Screenshots/Pivot11.png)
+Click minus signs to collapse.
 
-To collapse the groups, click the minus signs.
+![Collapse Groups](Screenshots/Pivot12.png)
 
-![screenshot](Screenshots/Pivot12.png)
+**Group Dates:**
+Add *Date* to Rows.  
+Right-click a date, Group → Quarters.
 
-Group Dates
+![Date Group Dialog](Screenshots/Pivot13.png)
+![Date Group Result](Screenshots/Pivot14.png)
 
-To create the pivot table below, instead of the Product field, add the Date field to the Rows area.
+> Quarter 2 is the best!
 
-To group these dates by quarters, execute the following steps.
+---
 
-1. Click any cell inside the column with dates.
-2. Right click and click on Group.
-3. Select Quarters and click OK.
+## ➕ Multiple Value & Report Filter Fields
 
-![screenshot](Screenshots/Pivot13.png)
+**Multiple Values:**
+- Country to Rows
+- Amount to Values (twice)
 
-Result:
+![Multi-Value Fields](Screenshots/Pivot17.png)
+![Multi-Value Result](Screenshots/Pivot18.png)
 
-![screenshot](Screenshots/Pivot14.png)
+To show % of Grand Total:
+- Value Field Settings → Custom Name: *Percentage*
+- Show Values As: % of Grand Total
 
-Quarter 2 is the best quarter.
+![Show Values As](Screenshots/Pivot19.png)
+![Percentage Result](Screenshots/Pivot20.png)
 
-Multi-level Pivot Table
+**Multiple Filters:**
+- Order ID to Rows
+- Amount to Values
+- Country & Product to Filters
 
-You can drag more than one field to an area in a pivot table.
+![Multiple Filters](Screenshots/Pivot21.png)
 
-First, insert a pivot table. Next, drag the following fields to the different areas.
+Select *United Kingdom* and *Broccoli* in filters.
 
-1. Category field and Country field to the Rows area.
-2. Amount field to the Values area.
+**Result:**
 
-![screenshot](Screenshots/Pivot15.png)
+![Multiple Filters Result](Screenshots/Pivot22.png)
 
-Result:
+---
 
-![screenshot](Screenshots/Pivot16.png)
+## 📈 Frequency Distribution
 
-Multiple Value Fields
+Pivot tables can create frequency distributions (histograms).
 
-First, insert a pivot table. Next, drag the following fields to the different areas.
+- Amount to Rows
+- Amount to Values
 
-1. Country field to the Rows area.
-2. Amount field to the Values area (2x).
+![Freq Fields](Screenshots/Pivot23.png)
 
-![screenshot](Screenshots/Pivot17.png)
+Change Values to *Count*.
 
-(Note: if you drag the Amount field to the Values area for the second time, Excel also populates the Columns area.)
+![Count Values](Screenshots/Pivot24.png)
 
-Result:
+Group amounts (e.g., by 1000):
 
-![screenshot](Screenshots/Pivot18.png)
+![Group Amounts](Screenshots/Pivot25.png)
 
-3. Next, click any cell inside the Sum of Amount2 column.
-4. Right click and click on Value Field Settings.
-5. Enter Percentage for Custom Name.
-6. On the Show Values As tab, select % of Grand Total.
+**Result:**
 
-![screenshot](Screenshots/Pivot19.png)
+![Freq Result](Screenshots/Pivot26.png)
 
-7. Click OK.
+Create a pivot chart for visualization:
 
-Result:
+![Freq Chart](Screenshots/Pivot27.png)
 
-![screenshot](Screenshots/Pivot20.png)
+---
 
-Multiple Report Filter Fields
+## 📊 Pivot Charts
 
-First, insert a pivot table. Next, drag the following fields to the different areas.
+Pivot charts visualize pivot tables.
 
-1. Order ID to the Rows area.
-2. Amount field to the Values area.
-3. Country field and Product field to the Filters area.
+Use your 2D pivot table:
+1. Click a cell in the pivot table
+2. PivotTable Analyze → Tools → PivotChart → OK
 
-![screenshot](Screenshots/Pivot21.png)
+![Pivot Chart](Screenshots/Pivot28.png)
 
-4. Next, select United Kingdom from the first filter drop-down and Broccoli from the second filter drop-down.
+> Changes sync between chart and table!
 
-Result:
+**Filter Pivot Chart:**
+Use Country filter to show only US exports.
 
-![screenshot](Screenshots/Pivot22.png)
+![Country Filter](Screenshots/Pivot29.png)
 
-Frequency Distribution
+Use Category filter to show vegetables.
 
-You can use pivot tables to easily create a frequency distribution in Excel. 
+![Category Filter](Screenshots/Pivot30.png)
 
-(Note: You can also use the Analysis Toolpak to create a histogram.)
+**Change Chart Type:**
+Select chart → Design → Change Chart Type → Pie → OK
 
-First, insert a pivot table. Next, drag the following fields to the different areas.
+![Pie Chart](Screenshots/Pivot31.png)
+![Pie Result](Screenshots/Pivot32.png)
 
-1. Amount field to the Rows area.
-2. Amount field to the Values area.
+> Pie charts show one data series.
 
-![screenshot](Screenshots/Pivot23.png)
+---
 
-3. Click any cell inside the Sum of Amount column.
-4. Right click and click on Value Field Settings.
-5. Choose Count and click OK.
+## 🥒 Slicers
 
-![screenshot](Screenshots/Pivot24.png)
+Slicers make filtering pivot tables intuitive.
 
-6. Next, click any cell inside the column with Row Labels.
-7. Right click and click on Group.
-8. Enter 1 for Starting at, 10000 for Ending at, and 1000 for By.
-9. Click OK.
+Insert a slicer:
+1. Click a cell in your pivot table
+2. PivotTable Analyze → Filters → Insert Slicer
+3. Check *Country* → OK
 
-![screenshot](Screenshots/Pivot25.png)
+![Country Slicer](Screenshots/Pivot33.png)
 
-Result:
+Click *United States* for product details.
 
-![screenshot](Screenshots/Pivot26.png)
+![Slicer Filtered](Screenshots/Pivot34.png)
 
-To compare these numbers, create a pivot chart.
+Insert a *Product* slicer, select style, use CTRL to select multiple.
 
-10. Click any cell inside the pivot table.
-11. On the PivotTable Analyze tab, in the Tools group, click PivotChart.
-12. Click OK.
+![Product Slicer](Screenshots/Pivot35.png)
 
-Result:
+**Connect slicers to multiple tables:**
+- Insert a second pivot table
+- Select slicer → Slicer tab → Report Connections → select table
 
-![screenshot](Screenshots/Pivot27.png)
+![Report Connections](Screenshots/Pivot36.png)
+![Connected Slicers](Screenshots/Pivot37.png)
 
-Pivot Chart
+Click the icon in a slicer to clear its filter:
 
-A pivot chart is the visual representation of a pivot table in Excel. Pivot charts and pivot tables are connected with each other.
+![Clear Slicer](Screenshots/Pivot38.png)
 
-Use two-dimensional pivot table from previous example.
+> No beans or carrots were exported to Canada!
 
-1. Click any cell inside the pivot table.
-2. On the PivotTable Analyze tab, in the Tools group, click PivotChart.
-3. Click OK.
+---
 
-Result:
+## 🔄 Update Pivot Table
 
-![screenshot](Screenshots/Pivot28.png)
+Pivot tables do **not** auto-refresh.  
+To update after changing data:
+1. Click any cell in the pivot table
+2. Right-click → Refresh
 
-(Note: any changes you make to the pivot chart are immediately reflected in the pivot table and vice versa.)
+> Or set "Refresh data when opening file" in PivotTable Options.
 
-Filter Pivot Chart
+---
 
-For example, use the Country filter to only show the total amount of each product exported to the United States.
+## 🧮 Calculated Field/Item
 
-![screenshot](Screenshots/Pivot29.png)
+**Calculated Field:**  
+Uses values from other fields.
 
-Remove the Country filter.
+1. Click a cell in the pivot table
+2. PivotTable Analyze → Calculations → Fields, Items & Sets → Calculated Field
 
-Because we added the Category field to the Filters area, we can filter this pivot chart (and pivot table) by Category. For example, use the Category filter to only show the vegetables exported to each country.
+![Calc Field](Screenshots/Pivot39.png)
 
-![screenshot](Screenshots/Pivot30.png)
+Insert formula, e.g.,
+```
+=IF(Amount>100000, 3%*Amount, 0)
+```
+Excel adds the field to Values.
 
-Change Pivot Chart Type
+![Calc Field Result](Screenshots/Pivot41.png)
 
-1. Select the chart.
-2. On the Design tab, in the Type group, click Change Chart Type.
-3. Choose Pie.
+**Calculated Item:**  
+Uses values from other items.
 
-![screenshot](Screenshots/Pivot31.png)
+1. Click a Country in the pivot table
+2. PivotTable Analyze → Calculations → Fields, Items & Sets → Calculated Item
 
-4. Click OK.
+Insert formula, e.g.,
+```
+=3%*(Australia+'New Zealand')
+```
 
-Result:
+![Calc Item Dialog](Screenshots/Pivot42.png)
+![Calc Item Result](Screenshots/Pivot43.png)
 
-![screenshot](Screenshots/Pivot32.png)
+> Created groups: Sales and Taxes.
 
-(Note: pie charts always use one data series (in this case, Beans).)
+---
 
-Slicers
+## 📑 GETPIVOTDATA Function
 
-Use slicers in Excel to quickly and easily filter pivot tables. Connect multiple slicers to multiple pivot tables to create awesome reports.
+**GETPIVOTDATA** returns visible data from a PivotTable.
 
-Use the first pivot table.
+## 📚 Official Documentation
 
-To insert a slicer, execute the following steps.
+- [GETPIVOTDATA function — Microsoft Docs](https://support.microsoft.com/en-us/office/getpivotdata-function-8c083b99-a922-4ca0-af5e-3af55960761f)
 
-1. Click any cell inside the pivot table.
-2. On the PivotTable Analyze tab, in the Filter group, click Insert Slicer.
-3. Check Country and click OK.
+---
 
-![screenshot](Screenshots/Pivot33.png)
+## 📷 Screenshots
 
-Click United States to find out which products we export the most to the United States.
+All screenshots are in the `/Screenshots` folder.
 
-![screenshot](Screenshots/Pivot34.png)
+---
 
-4. Click any cell inside the pivot table.
-5. On the PivotTable Analyze tab, in the Filter group, click Insert Slicer.
-6. Check Product and click OK.
-7. Select the slicer.
-8. On the Slicer tab, in the Slicer Styles group, click a slicer style.
-9. Use the second slicer. Hold down CTRL to select multiple products.
+## ℹ️ Requirements
 
-Result:
+- Microsoft Excel (recommended: 2021/365)
+- Windows OS
 
-![screenshot](Screenshots/Pivot35.png)
+---
 
-Connect slicers
+## 👨‍💻 Author
 
-1. Insert a second pivot table. (On the same worksheet.)
-2. Select the first slicer.
-3. On the Slicer tab, in the Slicer group, click Report Connections.
-4. Select the second pivot table and click OK. (PivotTable5 in this case.)
+Project and documentation by **Kuba27x**  
+Repository: [Kuba27x/Excel-17](https://github.com/Kuba27x/Excel-17)
 
-![screenshot](Screenshots/Pivot36.png)
-
-5. Repeat steps 2-4 for the second slicer.
-6. Use both slicers.
-
-![screenshot](Screenshots/Pivot37.png)
-
-
-Click the icon in the upper-right corner of a Product slicer to clear the filter.
-
-![screenshot](Screenshots/Pivot38.png)
-
-(Note: we didn't export any beans or carrots to Canada.)
-
-Update a Pivot Table
-
-Any changes you make to the data set are not automatically picked up by the pivot table. Refresh the pivot table or change the data source to update the pivot table with the applied changes.
-
-If you change any of the text or numbers in your data set, you need to refresh the pivot table.
-
-1. Click any cell inside the pivot table.
-2. Right click and click on Refresh.
-
-(Note: You can check "Refresh data when opening the file" on the Data tab in PivotTable Options to refresh a pivot table automatically when opening an Excel file.)
-
-Calculated Field/Item
-
-A calculated field uses the values from another field. To insert a calculated field, execute the following steps.
-
-1. Click any cell inside the pivot table.
-2. On the PivotTable Analyze tab, in the Calculations group, click Fields, Items & Sets.
-3. Click Calculated Field.
-
-![screenshot](Screenshots/Pivot39.png)
-
-The Insert Calculated Field dialog box appears.
-
-4. Enter Taxes for Name.
-5. Type the formula =IF(Amount>100000, 3%*Amount, 0)
-6. Click Add.
-
-![screenshot](Screenshots/Pivot40.png)
-
-7. Click OK.
-   
-Excel automatically adds the Taxes field to the Values area.
-
-Result:
-
-![screenshot](Screenshots/Pivot41.png)
-
-Calculated Item
-
-A calculated item uses the values from other items. To insert a calculated item, execute the following steps.
-
-1. Click any Country in the pivot table.
-2. On the PivotTable Analyze tab, in the Calculations group, click Fields, Items & Sets.
-3. Click Calculated Item.
-
-The Insert Calculated Item dialog box appears.
-
-4. Enter Oceania for Name.
-5. Type the formula =3%*(Australia+'New Zealand')
-6. Click Add.
-
-![screenshot](Screenshots/Pivot42.png)
-
-7. Repeat steps 4 to 6 for North America (Canada and United States) and Europe (France, Germany and United Kingdom) with a 4% and 5% tax rate respectively.
-8. Click OK.
-
-Result:
-
-![screenshot](Screenshots/Pivot43.png)
-
-(Note: we created two groups (Sales and Taxes).)
-
-GETPIVOTDATA function
-
-The GETPIVOTDATA function returns visible data from a PivotTable.
-
-Official documentation: https://support.microsoft.com/en-us/office/getpivotdata-function-8c083b99-a922-4ca0-af5e-3af55960761f
+---
